@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6ce45e7916.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather APP</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div id="imgsection">
+                <img src="" alt="" id="img">
+            </div>
+            <div id="weather-details">
+                <h1><span id="degrees"></span></h1>
+                <h1 id="bar"></h1>
+                <h1 id="city-name"></h1>
+                <p id='description'></p>
+            </div>
+        </div>
+        <div id="slider" class="slider_open">
+            <h3 class="title">Search Weather</h3>
+            <input type="text" name="" id="city" placeholder="City">
+            <button type="submit" id="searchweather"><i class="fas fa-search" id=""></i> Search</button>
+            <p style="color:red;" id="warning"></p>
+        </div>
+        <div id="table" class="visuallyhidden hidden">
+            <table>
+                <thead>
+                <tbody>
+                    <tr>
+                        <td>Humdity <i class="fa-solid fa-droplet"></i></td>
+                        <td id="humidity"></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed <i class="fa-solid fa-wind"></i></td>
+                        <td id="wind">A</td>
+                    </tr>
+                    <tr>
+                        <td>Pressure <i class="fa-sharp fa-solid fa-temperature-full"></i></td>
+                        <td id="Pressure">B</td>
+                    </tr>
+                    <tr>
+                        <td>Visibility <i class="fa-solid fa-eye-low-vision"></i></td>
+                        <td id="visibility">C</td>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
+        </div>
+        <button id="show">More info <i class="fa-solid fa-circle-info"></i></button>
+    </main>
+    <button id="toggle"><i class="fas fa-search"></i></button>
+    <script src="scrpit.js"></script>
+</body>
+
+</html>
